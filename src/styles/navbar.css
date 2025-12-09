@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", sans-serif;
+  font-weight: bold;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  position: fixed;
+  top: 35px;
+  left: 35px;
+  width: 35px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.bar {
+  height: 3.5px;
+  width: 100%;
+  background-color: #ff853b;
+  transition: all 0.3s;
+}
+
+/* Animación al abrir */
+.rotate1 {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.rotate2 {
+  transform: rotate(-45deg) translate(8.8px, -8.8px);
+}
+
+.bar.middle{
+  transform: scale(0.75,1);
+  transform-origin: left;
+}
+
+.bar.fade {
+  transform: scale(0.2) translateX(70px);
+  opacity: 0;
+}
+
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* oculta por defecto */
+  width: 250px;
+  height: 100%;
+  background-color: #080120cc;
+  backdrop-filter: blur(12px);
+  color: #fff;
+  transition: 0.3s;
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+
+.li-inicio{
+  margin-top: 40px;
+}
+
+.sidebar ul li a[role="button"] {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 20px 30px;
+  display: block;
+  transition: 0.3s;
+  margin: 0;
+} 
+
+.sidebar ul li:hover {
+  background-color: #470d9e59; /* tono azul semi-transparente */
+}
+.sidebar ul li:hover a {
+  padding-left: 43px;
+  margin-left: 2px;
+  color: #ff853b;
+  transform: scale(1.08); /* leve efecto visual */
+}

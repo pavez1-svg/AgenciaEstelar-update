@@ -1,0 +1,36 @@
+.footer {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    color: white;
+    text-align: center;
+    padding: 10px 2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-icon{
+    margin-bottom: -3px;
+    width: 28px;
+    height: auto;
+    opacity: 0.8;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+.footer p {
+    font-size: 0.875rem;
+    text-align: right;
+}
