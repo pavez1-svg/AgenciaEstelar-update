@@ -229,6 +229,11 @@ html, body {
     transform: rotate(-45deg) translate(5.5px, -5.5px);
   }
 
+  .sidebar ul li a {
+    font-size: 0.95em !important;
+    padding: 18px 35px !important;
+  } 
+
   /* ----- FOOTER ----- */
 
   .footer {
@@ -237,6 +242,7 @@ html, body {
 
   .footer p {
       font-size: 0.75rem;
+      padding-left: 20px;
   }
 
   /* ----- INICIO ----- */
@@ -309,7 +315,7 @@ html, body {
   .main-img,
   .main-video {
     width: 100% !important;
-    height: 764px !important;
+    height: auto !important;
   }
 
   .main-img {

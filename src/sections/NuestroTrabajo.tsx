@@ -98,11 +98,11 @@ import starwars2 from "../assets/star-wars-breakdown.mp4";
 import sirena from "../assets/sirena-3.png";
 import sirenaMobile from "../assets/9x16-sirena.png";
 import sirena2 from "../assets/sirena-breakdown-2.mp4";
-import wonder from "../assets/wonder_woman.png";
-import wonderMobile from "../assets/9x16-wonder-woman.png";
+import wonder from "../assets/wonder_woman.jpg";
+import wonderMobile from "../assets/9x16-wonder-woman.jpg";
 import wonder2 from "../assets/wonder-woman-breakdown.mp4";
 import blue from "../assets/perfect-blue-4.png";
-import blueMobile from "../assets/9x16-perfect-blue.png";
+import blueMobile from "../assets/9x16-perfect-blue.jpg";
 import blue2 from "../assets/perfect-blue-breakdown.mp4";
 import drinkeat1 from "../assets/drinkeat-slide2.png";
 import drinkeat1Mobile from "../assets/9x16-drinkeat-slide2.png";
@@ -460,7 +460,7 @@ export default function NuestroTrabajo() {
     isBigMobile ? -300 :
     -300;
   const yEnd =
-    isMobile ? 70 :
+    isMobile ? 0 :
     isBigMobile ? 55 :
     isBigMobile2 ? 70 :
     0;
@@ -655,6 +655,9 @@ export default function NuestroTrabajo() {
                                 <video
                                   key={media.src}
                                   controls
+                                  autoPlay
+                                  loop
+                                  playsInline
                                   className="main-video"
                                   onClick={() => setLightbox(media)}
                                 >

@@ -612,6 +612,7 @@ h1.titulo {
   /*margin: 20px auto;*/
   width: 100%;
   max-width: 1300px; 
+  margin-bottom: -6px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.5);
@@ -658,6 +659,7 @@ h1.titulo {
   opacity: 1 !important;
   transform: scale(1.005) !important;
   border-color: #fff !important;
+  margin-bottom: -3px;
 }
 
 .miniatura-activa {
@@ -691,6 +693,10 @@ h1.titulo {
   pointer-events: none;
   opacity: 0.4;
   transition: transform .3s, opacity .15s, border-color .15s;
+}
+
+.miniatura-activa .mini-video-overlay::after {
+  margin-bottom: 2px;
 }
 
 .miniatura:has(.mini-video:hover) .mini-video-overlay::after {
@@ -900,4 +906,9 @@ h1.titulo {
   background: linear-gradient(135deg, #8457ec, #6e1dc0);
   transform: scale(1.05);
 }
+
+.gallery-controls > * {
+  pointer-events: auto;
+}
+
 
