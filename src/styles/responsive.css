@@ -11,10 +11,6 @@ html, body {
 /* Tablets (pantallas medianas, 769px - 1024px) */
 @media (max-width: 1024px) {
 
-  .logo {
-    width: 120px;
-    top: 30px;
-  }
   .planeta1 {
     width: 180px !important;
     top: 8.2% !important;
@@ -25,23 +21,47 @@ html, body {
     bottom: 11% !important;
     right: 0% !important;
   }
+
+  .planeta3 {
+    top: 63% !important;
+    left: 4% !important;
+  }
+
+  .planeta4 {
+    width: 400px !important;
+    top: -3% !important;
+    left: 82% !important;
+  }
+
+
   .titulo{
-    margin-top: 2.7em !important;
-    margin-left: 1em !important;
+    left: 15vw !important;
+    transform: translateY(-61.2%) !important;
   }
+
   h1.titulo {
-    font-size: 6rem !important;
-    text-align: center;
+    font-size: 5rem !important;
+    text-align: left;
+    line-height: 1.1;
   }
-  .estrella-floating {
-    top: 36.3% !important;
-    left: 21% !important;
+
+  .estrella-floating-inside {
+    top: 10.9% !important;
+    left: 22% !important;
+    width: 380px !important;
   }
 
   .tituloslide {
     top: 7% !important;
     left: 4% !important;
     font-size: 1.3em;
+  }
+
+  .toast-close {
+    top: 0.4em !important;
+    right: 0.1em !important;
+    font-size: 1.4rem !important;
+    padding: 10px 15px !important;
   }
 
   .toast-desc {
@@ -59,7 +79,7 @@ html, body {
   .main-img,
   .main-video {
     width: 100% !important;
-    height: 498px !important;
+    height: auto !important;
   }
 
 }

@@ -450,7 +450,7 @@ export default function NuestroTrabajo() {
     isBigMobile ? 160 :
     140;
   const radiusEnd =
-    isMobile ? 200 :
+    isMobile ? 190 :
     isBigMobile ? 270 :
     isBigMobile2 ? 200 :
     320;
