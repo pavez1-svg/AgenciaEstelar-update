@@ -190,6 +190,11 @@ html, body {
 @media (max-width: 480px) {
     
   /* ----- LOGO ----- */
+
+  .logo-container {
+    top: 2em !important;
+  }
+
   .logo {
     width: 130px !important;
   }
@@ -235,8 +240,8 @@ html, body {
   }
 
   .sidebar ul li a {
-    font-size: 0.95em !important;
-    padding: 18px 35px !important;
+    font-size: 0.9em !important;
+    padding: 16px 35px !important;
   } 
 
   /* ----- FOOTER ----- */
@@ -298,7 +303,7 @@ html, body {
   }
 
   .toast-desc {
-    top: 12% !important;
+    top: 13% !important;
     left: 6% !important;
     font-size: 0.45em;
   }
@@ -315,6 +320,16 @@ html, body {
     height: auto !important;
   }
 
+  .video-wrapper{
+    background-color: black !important;
+    width: 100% !important;
+    height: 78.5vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
   .main-img,
   .main-video {
     width: 100% !important;
@@ -323,11 +338,18 @@ html, body {
   }
 
   .main-img {
-    object-fit: cover !important;
+    object-fit: contain !important;
   }
 
   .miniaturas {
     gap: 0 !important;
-    bottom: 4.9% !important;
+    bottom: 4.5% !important;
+  }
+
+  .miniaturas img,
+  .miniaturas .mini-video {
+    width: 69px !important;
+    height: 43px !important;
+    transform: scale(1) !important;
   }
 }

@@ -482,8 +482,14 @@ export default function NuestroTrabajo() {
     Record<number, Record<number, number>>
   >({});
   const [lightbox, setLightbox] = useState<Media | null>(null);
-  const [touchStart, setTouchStart] = useState<number>(0);
-  const [touchEnd, setTouchEnd] = useState<number>(0);
+
+  // Gestos del carrusel 3D
+  const [carouselTouchStart, setCarouselTouchStart] = useState(0);
+  const [carouselTouchEnd, setCarouselTouchEnd] = useState(0);
+
+  // Gestos internos de la galería (ya NO sirven para swipe)
+  const [galleryTouchStart, setGalleryTouchStart] = useState(0);
+  const [galleryTouchEnd, setGalleryTouchEnd] = useState(0);
 
   // Gestos táctiles
   const handleTouchStart = (e: React.TouchEvent) => setTouchStart(e.targetTouches[0].clientX);
@@ -544,6 +550,35 @@ export default function NuestroTrabajo() {
     changeGalleryImage(proyecto.id, slideIdx, prevIdx);
   };
 
+  // SWIPE del carrusel principal (3D)
+  const handleCarouselTouchStart = (e: React.TouchEvent) =>
+    setCarouselTouchStart(e.targetTouches[0].clientX);
+
+  const handleCarouselTouchMove = (e: React.TouchEvent) => {
+    const x = e.targetTouches[0].clientX;
+    setCarouselTouchEnd(x);
+
+    if (Math.abs(carouselTouchStart - x) > 15) {
+        setIsSwiping(true); // ← detecta intención de swipe
+      }
+    };
+
+  const handleCarouselTouchEnd = () => {
+    const distance = carouselTouchStart - carouselTouchEnd;
+
+    if (isSwiping) {
+      if (distance > 50) setActive((prev) => prev + 1);
+      else if (distance < -50) setActive((prev) => prev - 1);
+    }
+
+    // reset
+    setIsSwiping(false);
+    setCarouselTouchStart(0);
+    setCarouselTouchEnd(0);
+  };
+
+  const [isSwiping, setIsSwiping] = useState(false);
+
   // ====================== RENDER ======================
   return (
     <div
@@ -564,7 +599,12 @@ export default function NuestroTrabajo() {
     proyectos={proyectos}
     />
       <div className="overlay2">
-        <div className="carrusel3d">
+        <div
+          className="carrusel3d"
+          onTouchStart={handleCarouselTouchStart}
+          onTouchMove={handleCarouselTouchMove}
+          onTouchEnd={handleCarouselTouchEnd}
+        >
           {proyectos.map((proyecto, index) => {
             const total = proyectos.length;
             const angle = (360 / total) * (index - active);
@@ -584,11 +624,10 @@ export default function NuestroTrabajo() {
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  if (index === active) {
-                    openToast(proyecto);
-                  } else {
-                    setActive(index);
-                  }
+                  if (!isSwiping) {   // 👈 SOLO si NO hubo swipe
+                      if (index === active) openToast(proyecto);
+                      else setActive(index);
+                    }
                 }}
               >
           
@@ -632,9 +671,18 @@ export default function NuestroTrabajo() {
 
                     <div
                       className="toast-carousel"
-                      onTouchStart={handleTouchStart}
-                      onTouchMove={handleTouchMove}
-                      onTouchEnd={() => handleTouchEnd(proyecto)}
+                      onTouchStart={(e) => {
+                        e.stopPropagation();   // ⛔ evita que el swipe llegue al carrusel
+                        setGalleryTouchStart(e.targetTouches[0].clientX);
+                      }}
+                      onTouchMove={(e) => {
+                        e.stopPropagation();   // ⛔
+                        setGalleryTouchEnd(e.targetTouches[0].clientX);
+                      }}
+                      onTouchEnd={(e) => {
+                        e.stopPropagation();   // ⛔
+                        // YA NO HACEMOS SWIPE AQUÍ
+                      }}
                     >
                       {proyecto.slides.length > 1 && (
                         <button onClick={() => prevSlideInProject(proyecto)} className="nav-btn-prev">
