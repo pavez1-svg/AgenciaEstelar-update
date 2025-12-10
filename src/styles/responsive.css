@@ -218,6 +218,7 @@ html, body {
   }
 
   .portal-mask {
+    width: 100vw !important;
     background-image: url("../assets/9x16_portal_mask_add.svg") !important;
   }
 
@@ -258,8 +259,8 @@ html, body {
   /* ----- INICIO ----- */
 
   .titulo{
-    margin-top: 5.5em !important;
-    margin-left: 0.6em !important;
+    left: -0.61em !important;
+    transform: translateY(-161.2%) !important;
   }
 
   h1.titulo {
@@ -268,11 +269,18 @@ html, body {
     line-height: 1.1;
   }
 
+  .estrella-floating-inside {
+    top: 6% !important;
+    left: 16% !important;
+    width: 230px !important;
+  }
+
+  /*
   .estrella-floating {
     width: 210px !important;
-    top: 38% !important;
+    top: 36.7vh !important;
     left: 21.5% !important;
-  }
+  }*/
 
   .titulo-gravity span {
     font-size: 2.3rem;

@@ -222,7 +222,6 @@ return (
 
             <div className="portal-container">
                 <div className="portal-content">
-                    <img src={estrella} alt="Estrella" className="estrella-floating" ref={estrellaRef} />
                     <img src={planeta1} alt="Planeta 1" className="planeta planeta1" ref={addPlanetaRef} />
                     <img src={planeta2} alt="Planeta 2" className="planeta planeta2" ref={addPlanetaRef} />
 
@@ -236,16 +235,16 @@ return (
                         </span>
                         
                         <br />
-                        <span className="titulo-gravity-2">
+                        <span className="titulo-gravity-2 palabra-pasadizo-wrapper">
                             {palabra2.split("").map((letra, i) => (
                                 <span key={i} ref={addToRefs}>{letra}</span>
                             ))}
-                            <span
-                                className="estrella-span"
-                                ref={(el) => {
-                                    addToRefs(el);
-                                    if (el) estrellaIndexRef.current = spansRef.current.length - 1;
-                                }}
+                            
+                            <img
+                                src={estrella}
+                                alt="Estrella"
+                                className="estrella-floating-inside"
+                                ref={estrellaRef}
                             />
                         </span>
                         

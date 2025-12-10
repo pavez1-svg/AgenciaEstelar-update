@@ -253,14 +253,17 @@ section {
 
 /* ----------------------- Titulo ----------------------- */
 .titulo {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 3.2em;
+  transform: translateY(-61.2%);
   display: flex;
   flex-direction: column;
   align-items: flex-start !important;
   justify-content: center;
   
-  margin-top: 1.73em;
-  margin-left: 3.2em;
+  margin: 0;
+  padding: 0;
   font-weight: bold;
   text-align: left;
   font-family: "Righteous", sans-serif;
@@ -272,6 +275,21 @@ h1.titulo {
   font-size: 6.4rem;
 }
 
+.palabra-pasadizo-wrapper {
+  position: relative;      /* HACE QUE LA ESTRELLA SE GUIE POR ESTE BLOQUE */
+  display: inline-block;
+}
+
+.estrella-floating-inside {
+  position: absolute;
+  top: 11.2%;
+  left: 22%;
+  transform: translateX(-50%);
+  width: 480px;
+  height: auto;
+  z-index: 5;
+  pointer-events: none;
+}
 
 .titulo-gravity-1 {
   font-family: "Righteous", sans-serif;
