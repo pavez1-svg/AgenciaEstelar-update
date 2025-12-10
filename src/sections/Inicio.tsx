@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "../styles/global.css";
 import "../styles/responsive.css";
 
-import fondo from "../assets/FONDO2-03-03-03-4.png";
+import fondo from "../assets/FONDO2-03-03-03-4.jpg";
 import logo from "../assets/logo.png";
 import planeta1 from "../assets/planeta1-04.png";
 import planeta2 from "../assets/planeta2-05.png";

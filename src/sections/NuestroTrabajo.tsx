@@ -16,110 +16,110 @@ import portada6 from "../assets/manifiesto-icon.png";
 import playIcon from "../assets/play_icon.svg";
 
 import espacioExterior1 from "../assets/espacioExterior1.jpg";
-import espacioExterior1Mobile from "../assets/9x16-espacioExterior1.png";
+import espacioExterior1Mobile from "../assets/9x16-espacioExterior1.jpg";
 import espacioExterior2 from "../assets/espacioExterior2.jpg";
-import espacioExterior2Mobile from "../assets/9x16-espacioExterior2.png";
+import espacioExterior2Mobile from "../assets/9x16-espacioExterior2.jpg";
 import espacioExterior3 from "../assets/espacioExterior3.jpg";
-import espacioExterior3Mobile from "../assets/9x16-espacioExterior3.png";
+import espacioExterior3Mobile from "../assets/9x16-espacioExterior3.jpg";
 import espacioExterior4 from "../assets/espacioExterior4.jpg";
-import espacioExterior4Mobile from "../assets/9x16-espacioExterior4.png";
+import espacioExterior4Mobile from "../assets/9x16-espacioExterior4.jpg";
 import espacioExterior5 from "../assets/espacioExterior5.jpg";
-import espacioExterior5Mobile from "../assets/9x16-espacioExterior5.png";
+import espacioExterior5Mobile from "../assets/9x16-espacioExterior5.jpg";
 import espacioExterior6 from "../assets/espacioExterior6.jpg";
-import espacioExterior6Mobile from "../assets/9x16-espacioExterior6.png";
+import espacioExterior6Mobile from "../assets/9x16-espacioExterior6.jpg";
 
 import muñeca0 from "../assets/muneca-render.mp4";
 import muñeca1 from "../assets/muneca1.jpg";
-import muñeca1Mobile from "../assets/9x16-muneca1.png";
+import muñeca1Mobile from "../assets/9x16-muneca1.jpg";
 import muñeca2 from "../assets/muneca2.jpg";
-import muñeca2Mobile from "../assets/9x16-muneca2.png";
+import muñeca2Mobile from "../assets/9x16-muneca2.jpg";
 import muñeca3 from "../assets/muneca3.jpg";
-import muñeca3Mobile from "../assets/9x16-muneca3.png";
+import muñeca3Mobile from "../assets/9x16-muneca3.jpg";
 import muñeca4 from "../assets/muneca4.jpg";
-import muñeca4Mobile from "../assets/9x16-muneca4.png";
+import muñeca4Mobile from "../assets/9x16-muneca4.jpg";
 
 import ovni0 from "../assets/ovni-render.mp4";
 import ovni1 from "../assets/ovni1.jpg";
-import ovni1Mobile from "../assets/9x16-ovni1.png";
+import ovni1Mobile from "../assets/9x16-ovni1.jpg";
 import ovni2 from "../assets/ovni2.jpg";
-import ovni2Mobile from "../assets/9x16-ovni2.png";
+import ovni2Mobile from "../assets/9x16-ovni2.jpg";
 import ovni3 from "../assets/ovni3.jpg";
-import ovni3Mobile from "../assets/9x16-ovni3.png";
+import ovni3Mobile from "../assets/9x16-ovni3.jpg";
 
 import satelite0 from "../assets/satelite-render.mp4";
 import satelite1 from "../assets/satelite1.jpg";
-import satelite1Mobile from "../assets/9x16-satelite1.png";
+import satelite1Mobile from "../assets/9x16-satelite1.jpg";
 import satelite2 from "../assets/satelite2.jpg";
-import satelite2Mobile from "../assets/9x16-satelite2.png";
+import satelite2Mobile from "../assets/9x16-satelite2.jpg";
 import satelite3 from "../assets/satelite3.jpg";
-import satelite3Mobile from "../assets/9x16-satelite3.png";
+import satelite3Mobile from "../assets/9x16-satelite3.jpg";
 import satelite4 from "../assets/satelite4.jpg";
-import satelite4Mobile from "../assets/9x16-satelite4.png";
+import satelite4Mobile from "../assets/9x16-satelite4.jpg";
 import satelite5 from "../assets/satelite5.jpg";
-import satelite5Mobile from "../assets/9x16-satelite5.png";
+import satelite5Mobile from "../assets/9x16-satelite5.jpg";
 
 import nave0 from "../assets/nave-render.mp4";
 import nave1 from "../assets/nave1.jpg";
-import nave1Mobile from "../assets/9x16-nave1.png";
+import nave1Mobile from "../assets/9x16-nave1.jpg";
 import nave2 from "../assets/nave2.jpg";
-import nave2Mobile from "../assets/9x16-nave2.png";
+import nave2Mobile from "../assets/9x16-nave2.jpg";
 import nave3 from "../assets/nave3.jpg";
-import nave3Mobile from "../assets/9x16-nave3.png";
+import nave3Mobile from "../assets/9x16-nave3.jpg";
 
 import piano0 from "../assets/piano-render.mp4";
 import piano1 from "../assets/piano1.jpg";
-import piano1Mobile from "../assets/9x16-piano1.png";
+import piano1Mobile from "../assets/9x16-piano1.jpg";
 import piano2 from "../assets/piano3.jpg";
-import piano2Mobile from "../assets/9x16-piano2.png";
+import piano2Mobile from "../assets/9x16-piano2.jpg";
 import piano3 from "../assets/piano2.jpg";
-import piano3Mobile from "../assets/9x16-piano3.png";
+import piano3Mobile from "../assets/9x16-piano3.jpg";
 
 import reloj0 from "../assets/reloj-render.mp4";
 import reloj1 from "../assets/reloj1.jpg";
-import reloj1Mobile from "../assets/9x16-reloj1.png";
+import reloj1Mobile from "../assets/9x16-reloj1.jpg";
 import reloj2 from "../assets/reloj2.jpg";
-import reloj2Mobile from "../assets/9x16-reloj2.png";
+import reloj2Mobile from "../assets/9x16-reloj2.jpg";
 import reloj3 from "../assets/reloj3.jpg";
-import reloj3Mobile from "../assets/9x16-reloj3.png";
+import reloj3Mobile from "../assets/9x16-reloj3.jpg";
 
 import rockola0 from "../assets/rockola-render.mp4";
 import rockola1 from "../assets/rockola1.jpg";
-import rockola1Mobile from "../assets/9x16-rockola1.png";
+import rockola1Mobile from "../assets/9x16-rockola1.jpg";
 import rockola2 from "../assets/rockola2.jpg";
-import rockola2Mobile from "../assets/9x16-rockola2.png";
+import rockola2Mobile from "../assets/9x16-rockola2.jpg";
 import rockola3 from "../assets/rockola3.jpg";
-import rockola3Mobile from "../assets/9x16-rockola3.png";
+import rockola3Mobile from "../assets/9x16-rockola3.jpg";
 import rockola4 from "../assets/rockola4.jpg";
-import rockola4Mobile from "../assets/9x16-rockola4.png";
+import rockola4Mobile from "../assets/9x16-rockola4.jpg";
 
-import starwars from "../assets/star-wars-2.png";
-import starwarsMobile from "../assets/9x16-star-wars.png";
+import starwars from "../assets/star-wars-2.jpg";
+import starwarsMobile from "../assets/9x16-star-wars.jpg";
 import starwars2 from "../assets/star-wars-breakdown.mp4";
-import sirena from "../assets/sirena-3.png";
-import sirenaMobile from "../assets/9x16-sirena.png";
+import sirena from "../assets/sirena-3.jpg";
+import sirenaMobile from "../assets/9x16-sirena.jpg";
 import sirena2 from "../assets/sirena-breakdown-2.mp4";
 import wonder from "../assets/wonder_woman.jpg";
 import wonderMobile from "../assets/9x16-wonder-woman.jpg";
 import wonder2 from "../assets/wonder-woman-breakdown.mp4";
-import blue from "../assets/perfect-blue-4.png";
+import blue from "../assets/perfect-blue-4.jpg";
 import blueMobile from "../assets/9x16-perfect-blue.jpg";
 import blue2 from "../assets/perfect-blue-breakdown.mp4";
-import drinkeat1 from "../assets/drinkeat-slide2.png";
-import drinkeat1Mobile from "../assets/9x16-drinkeat-slide2.png";
-import drinkeat2 from "../assets/drinkeat-slide3.png";
-import drinkeat2Mobile from "../assets/9x16-drinkeat-slide3.png";
-import drinkeat3 from "../assets/drinkeat-slide12.png";
-import drinkeat3Mobile from "../assets/9x16-drinkeat-slide12.png";
-import drinkeat4 from "../assets/drinkeat-slide15.png";
-import drinkeat4Mobile from "../assets/9x16-drinkeat-slide15.png";
-import drinkeat5 from "../assets/drinkeat-slide16.png";
-import drinkeat5Mobile from "../assets/9x16-drinkeat-slide16.png";
-import drinkeat6 from "../assets/drinkeat-slide17.png";
-import drinkeat6Mobile from "../assets/9x16-drinkeat-slide17.png";
-import drinkeat7 from "../assets/drinkeat-slide18.png";
-import drinkeat7Mobile from "../assets/9x16-drinkeat-slide18.png";
-import drinkeat8 from "../assets/drinkeat-slide19.png";
-import drinkeat8Mobile from "../assets/9x16-drinkeat-slide19.png";
+import drinkeat1 from "../assets/drinkeat-slide2.jpg";
+import drinkeat1Mobile from "../assets/9x16-drinkeat-slide2.jpg";
+import drinkeat2 from "../assets/drinkeat-slide3.jpg";
+import drinkeat2Mobile from "../assets/9x16-drinkeat-slide3.jpg";
+import drinkeat3 from "../assets/drinkeat-slide12.jpg";
+import drinkeat3Mobile from "../assets/9x16-drinkeat-slide12.jpg";
+import drinkeat4 from "../assets/drinkeat-slide15.jpg";
+import drinkeat4Mobile from "../assets/9x16-drinkeat-slide15.jpg";
+import drinkeat5 from "../assets/drinkeat-slide16.jpg";
+import drinkeat5Mobile from "../assets/9x16-drinkeat-slide16.jpg";
+import drinkeat6 from "../assets/drinkeat-slide17.jpg";
+import drinkeat6Mobile from "../assets/9x16-drinkeat-slide17.jpg";
+import drinkeat7 from "../assets/drinkeat-slide18.jpg";
+import drinkeat7Mobile from "../assets/9x16-drinkeat-slide18.jpg";
+import drinkeat8 from "../assets/drinkeat-slide19.jpg";
+import drinkeat8Mobile from "../assets/9x16-drinkeat-slide19.jpg";
 
 import mtv from "../assets/videos/mtv.mp4";
 import clones from "../assets/videos/clones.mp4";
@@ -456,11 +456,11 @@ export default function NuestroTrabajo() {
     320;
 
   const yStart =
-    isMobile ? -300 :
+    isMobile ? -260 :
     isBigMobile ? -300 :
     -300;
   const yEnd =
-    isMobile ? 0 :
+    isMobile ? -15 :
     isBigMobile ? 55 :
     isBigMobile2 ? 70 :
     0;

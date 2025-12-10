@@ -191,15 +191,20 @@ html, body {
     
   /* ----- LOGO ----- */
   .logo {
-    width: 150px;
-    top: 10px;
+    width: 130px !important;
   }
 
   /* ----- FONDO-INICIO ----- */
 
+  .planeta3 {
+    width: 90px !important;
+    top: 57% !important;
+    left: 3% !important;
+  }
+
   .planeta4 {
     top: -2% !important;
-    left: 78% !important;
+    left: 72% !important;
   }
 
   .portal-container {
@@ -249,19 +254,19 @@ html, body {
 
   .titulo{
     margin-top: 5.5em !important;
-    margin-left: 0.8em !important;
+    margin-left: 0.6em !important;
   }
 
   h1.titulo {
-    font-size: 3.5rem !important;
+    font-size: 2.8rem !important;
     text-align: left;
     line-height: 1.1;
   }
 
   .estrella-floating {
-    width: 250px !important;
-    top: 37.6% !important;
-    left: 24.5% !important;
+    width: 210px !important;
+    top: 38% !important;
+    left: 21.5% !important;
   }
 
   .titulo-gravity span {
@@ -269,15 +274,15 @@ html, body {
   }
 
   .planeta1 {
-    width: 200px !important;
-    top: 10% !important;
-    left: 1% !important;
+    width: 150px !important;
+    top: 9% !important;
+    left: 2% !important;
   }
 
   .planeta2 {
-    width: 300px !important;
-    bottom: 15% !important;
-    right: 3% !important;
+    width: 250px !important;
+    bottom: 12% !important;
+    right: 0% !important;
   }
   
   /* ----- NUESTRO TRABAJO ----- */
@@ -287,34 +292,33 @@ html, body {
   /* --- Pop-ups --- */
 
   .tituloslide {
-    top: 8.5% !important;
+    top: 9.2% !important;
     left: 6% !important;
-    font-size: 1.15em;
+    font-size: 0.9em;
   }
 
   .toast-desc {
-    top: 12.5% !important;
+    top: 12% !important;
     left: 6% !important;
-    font-size: 0.75em;
-  }
-
-  .toast-content {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 390px !important;
-    height: 762px !important;
-    /*width: 1080px !important;*/
-    /*height: 750px !important;*/
+    font-size: 0.45em;
   }
 
   .toast-close {
     top: 0.2em !important;
     right: -0.3em !important;
+    font-size: 1.2rem !important;
+    padding: 8px 12px !important;
+  }
+
+  .toast-content {
+    width: 90% !important;
+    height: auto !important;
   }
 
   .main-img,
   .main-video {
     width: 100% !important;
+    margin-bottom: -6px !important;
     height: auto !important;
   }
 
