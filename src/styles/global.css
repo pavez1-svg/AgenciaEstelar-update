@@ -274,6 +274,7 @@ section {
 h1.titulo {
   font-size: 6.4rem;
   margin-left: 3vw;
+  color: aqua;
 }
 
 .palabra-pasadizo-wrapper {
