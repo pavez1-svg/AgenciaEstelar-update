@@ -141,7 +141,7 @@ import manifiesto from "../assets/manifiesto_lowerSize.mp4";
 
 // ====================== TIPOS ======================
 type Media = {
-  type: "image" | "video";
+  type: "image" | "video" | "youtube";
   src: string;
   mobileSrc?: string;
   bigMobileSrc?: string;
@@ -414,7 +414,12 @@ const proyectos: Proyecto[] = [
       {
         titulo: "Llamado de origen",
         descripcion1: "",
-        galeria: [{ type: "video", src: manifiesto }]
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/mJ-qvsxPHpY"
+          }
+        ]
       }
     ],
   },
@@ -728,6 +733,17 @@ export default function NuestroTrabajo() {
                                 />
                               </picture>
                             )}
+                            {media.type === "youtube" && (
+                            <div className="youtube-container">
+                              <iframe
+                                src={media.src}
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              ></iframe>
+                            </div>
+                          )}
 
                             <button className="small-nav-btn" onClick={() => nextImageInSlide(proyecto)}>
                               ›
