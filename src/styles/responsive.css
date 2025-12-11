@@ -12,14 +12,14 @@ html, body {
 @media (max-width: 1024px) {
 
   .planeta1 {
-    width: 180px !important;
-    top: 8.2% !important;
-    left: 5% !important;
+    width: 170px !important;
+    top: 8% !important;
+    left: 2% !important;
   }
   .planeta2 {
     width: 300px !important;
-    bottom: 11% !important;
-    right: 0% !important;
+    bottom: 7% !important;
+    right: -5% !important;
   }
 
   .planeta3 {
@@ -192,7 +192,7 @@ html, body {
   .main-img,
   .main-video {
     width: 100% !important;
-    height: 800px !important;
+    height: auto !important;
   }
 
   .main-img {

@@ -254,8 +254,8 @@ section {
 /* ----------------------- Titulo ----------------------- */
 .titulo {
   position: absolute;
-  top: 50%;
-  left: 3.2em;
+  top: 50vh;
+  left: 18vw;
   transform: translateY(-61.2%);
   display: flex;
   flex-direction: column;
@@ -273,6 +273,7 @@ section {
 
 h1.titulo {
   font-size: 6.4rem;
+  margin-left: 3vw;
 }
 
 .palabra-pasadizo-wrapper {
@@ -349,16 +350,16 @@ h1.titulo {
 }
 
 .planeta1 {
-  top: 12%;
-  left: 1.5%;
-  width: 250px;
+  top: 5vh;
+  left: 3vw;
+  width: 18vw;
   animation-duration: 25s;
 }
 
 .planeta2 {
-  bottom: 17%;
-  right: 4%;
-  width: 320px;
+  bottom: 2.5vh;
+  right: 1vw;
+  width: 28vw;
   animation-duration: 40s;
 }
 
