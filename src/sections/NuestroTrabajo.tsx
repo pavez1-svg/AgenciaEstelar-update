@@ -121,23 +121,12 @@ import drinkeat7Mobile from "../assets/9x16-drinkeat-slide18.jpg";
 import drinkeat8 from "../assets/drinkeat-slide19.jpg";
 import drinkeat8Mobile from "../assets/9x16-drinkeat-slide19.jpg";
 
-import mtv from "../assets/videos/mtv.mp4";
-import clones from "../assets/videos/clones.mp4";
-import estelar from "../assets/videos/Estelar_AJR_MaybeMan_V1_01.mp4";
-import flybondi from "../assets/videos/flybondi2.mp4";
-import infografia from "../assets/videos/infografia.mp4";
-import fresca from "../assets/videos/fresca_lowerSize.mp4";
-
 import webterra from "../assets/terra-header.jpg";
 import webterraMobile from "../assets/9x16-terra-header.jpg";
 import webresident from "../assets/re4-header.jpg";
 import webresidentMobile from "../assets/9x16-re4-header.jpg";
 import webprana from "../assets/yoga-header.jpg";
 import webpranaMobile from "../assets/9x16-yoga-header.jpg";
-
-import reel from "../assets/reel_lowerSize.mp4";
-
-import manifiesto from "../assets/manifiesto_lowerSize.mp4";
 
 // ====================== TIPOS ======================
 type Media = {
@@ -326,37 +315,67 @@ const proyectos: Proyecto[] = [
         titulo: "Intervención en vivo",
         descripcion1: "MTV amigo",
         descripcion2: " ",
-        galeria: [{ type: "video", src: mtv }],
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/QewWsRvbzMw"
+          }
+        ],
       },
       {
         titulo: "Clones",
         descripcion1: "Presentamos nuestro apoyo en contra de los originales",
         descripcion2: " ",
-        galeria: [{ type: "video", src: clones }],
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/K8r3EwptcQg"
+          }
+        ],
       },
       {
         titulo: "Intérprete emocional",
         descripcion1: "¿Por qué los humanos tienen tantos idiomas? Solo elijan al mejor, el nuestro!¡",
         descripcion2: " ",
-        galeria: [{ type: "video", src: estelar }],
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/IQnZdgrEj9M"
+          }
+        ],
       },
       {
         titulo: "Mensaje desde los cielos",
         descripcion1: "¿Saltos entre ciudades y caminos aéreos? Por algo se empieza...",
         descripcion2: " ",
-        galeria: [{ type: "video", src: flybondi }],
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/f0GtpZ_O1Do"
+          }
+        ],
       },
       {
         titulo: "Pensar-no-humano",
         descripcion1: "Intento humano de explicar lo que ellos mismos inventaron y ya no entienden del todo",
         descripcion2: " ",
-        galeria: [{ type: "video", src: infografia }],
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/Kw5E6c48ALc"
+          }
+        ],
       },
       {
         titulo: "Fideos infinitos",
         descripcion1: "Ningún humano fue herido durante su producción! :D",
         descripcion2: " ",
-        galeria: [{ type: "video", src: fresca }],
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/UU3EkJgDV8U"
+          }
+        ],
       },
     ],
   },
@@ -402,7 +421,12 @@ const proyectos: Proyecto[] = [
       {
         titulo: "Sorpresa ocular!!",
         descripcion1: "",
-        galeria: [{ type: "video", src: reel }]
+        galeria: [
+          {
+            type: "youtube",
+            src: "https://www.youtube.com/embed/Zk7dIey8e5Q"
+          }
+        ]
       }
     ],
   },
@@ -417,7 +441,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/mJ-qvsxPHpY"
+            src: "https://www.youtube.com/embed/3BhsNbKbMwY"
           }
         ]
       }
@@ -703,7 +727,7 @@ export default function NuestroTrabajo() {
                               ‹
                             </button>
 
-                            {media.type === "video" ? (
+                            {media.type === "video" && (
                               <div className="video-wrapper">
                                 <video
                                   key={media.src}
@@ -717,7 +741,9 @@ export default function NuestroTrabajo() {
                                   <source src={media.src} type="video/mp4" />
                                 </video>
                               </div>
-                            ) : (
+                            )}
+
+                            {media.type === "image" && (
                               <picture>
                                 {media.mobileSrc && (
                                   <source media="(max-width: 480px)" srcSet={media.mobileSrc} />
@@ -727,12 +753,13 @@ export default function NuestroTrabajo() {
                                 )}
                                 <img
                                   src={media.src} 
-                                  alt={`slide-${slideIdx}-img-${curIdx}`} 
+                                  alt="" 
                                   className="main-img"
                                   onClick={() => setLightbox(media)}
                                 />
                               </picture>
                             )}
+
                             {media.type === "youtube" && (
                             <div className="youtube-container">
                               <iframe

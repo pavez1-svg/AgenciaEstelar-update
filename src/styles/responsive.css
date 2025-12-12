@@ -82,6 +82,10 @@ html, body {
     height: auto !important;
   }
 
+  .youtube-container {
+    padding-bottom: 62.65vh !important;
+  }
+
 }
 
 /* Mobile grande (481px - 768px) */
@@ -193,6 +197,11 @@ html, body {
   .main-video {
     width: 100% !important;
     height: auto !important;
+  }
+
+  .youtube-container {
+    width: 450px !important;
+    height: 600px !important;
   }
 
   .main-img {
