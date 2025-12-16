@@ -685,6 +685,7 @@ h1.titulo {
   transition: transform .3s, opacity .15s, border-color .15s;
 }
 
+
 .miniaturas img:hover,
 .miniaturas .mini-video:hover{
   transform: scale(1.1);
@@ -695,7 +696,7 @@ h1.titulo {
   opacity: 1 !important;
   transform: scale(1.005) !important;
   border-color: #fff !important;
-  margin-bottom: -3px;
+
 }
 
 .miniatura-activa {
@@ -712,6 +713,7 @@ h1.titulo {
 
 .mini-video-overlay{
   position: relative;
+  place-items: center;
 }
 
 .mini-video-overlay::after{
@@ -741,7 +743,8 @@ h1.titulo {
 }
 
 .miniatura-activa .mini-video-overlay::after {
-  transform: scale(1.3);
+  transform: scale(1.1);
+  margin-bottom: 5px;
   opacity: 0.8;
 }
 

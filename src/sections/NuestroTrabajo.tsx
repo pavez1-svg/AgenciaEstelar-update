@@ -13,8 +13,6 @@ import portada4 from "../assets/webs-icon.png";
 import portada5 from "../assets/reel-icon.png";
 import portada6 from "../assets/manifiesto-icon.png";
 
-import playIcon from "../assets/play_icon.svg";
-
 import espacioExterior1 from "../assets/espacioExterior1.jpg";
 import espacioExterior1Mobile from "../assets/9x16-espacioExterior1.jpg";
 import espacioExterior2 from "../assets/espacioExterior2.jpg";
@@ -28,7 +26,6 @@ import espacioExterior5Mobile from "../assets/9x16-espacioExterior5.jpg";
 import espacioExterior6 from "../assets/espacioExterior6.jpg";
 import espacioExterior6Mobile from "../assets/9x16-espacioExterior6.jpg";
 
-import muñeca0 from "../assets/muneca-render.mp4";
 import muñeca1 from "../assets/muneca1.jpg";
 import muñeca1Mobile from "../assets/9x16-muneca1.jpg";
 import muñeca2 from "../assets/muneca2.jpg";
@@ -38,7 +35,6 @@ import muñeca3Mobile from "../assets/9x16-muneca3.jpg";
 import muñeca4 from "../assets/muneca4.jpg";
 import muñeca4Mobile from "../assets/9x16-muneca4.jpg";
 
-import ovni0 from "../assets/ovni-render.mp4";
 import ovni1 from "../assets/ovni1.jpg";
 import ovni1Mobile from "../assets/9x16-ovni1.jpg";
 import ovni2 from "../assets/ovni2.jpg";
@@ -46,7 +42,6 @@ import ovni2Mobile from "../assets/9x16-ovni2.jpg";
 import ovni3 from "../assets/ovni3.jpg";
 import ovni3Mobile from "../assets/9x16-ovni3.jpg";
 
-import satelite0 from "../assets/satelite-render.mp4";
 import satelite1 from "../assets/satelite1.jpg";
 import satelite1Mobile from "../assets/9x16-satelite1.jpg";
 import satelite2 from "../assets/satelite2.jpg";
@@ -58,7 +53,6 @@ import satelite4Mobile from "../assets/9x16-satelite4.jpg";
 import satelite5 from "../assets/satelite5.jpg";
 import satelite5Mobile from "../assets/9x16-satelite5.jpg";
 
-import nave0 from "../assets/nave-render.mp4";
 import nave1 from "../assets/nave1.jpg";
 import nave1Mobile from "../assets/9x16-nave1.jpg";
 import nave2 from "../assets/nave2.jpg";
@@ -66,7 +60,6 @@ import nave2Mobile from "../assets/9x16-nave2.jpg";
 import nave3 from "../assets/nave3.jpg";
 import nave3Mobile from "../assets/9x16-nave3.jpg";
 
-import piano0 from "../assets/piano-render.mp4";
 import piano1 from "../assets/piano1.jpg";
 import piano1Mobile from "../assets/9x16-piano1.jpg";
 import piano2 from "../assets/piano3.jpg";
@@ -74,7 +67,6 @@ import piano2Mobile from "../assets/9x16-piano2.jpg";
 import piano3 from "../assets/piano2.jpg";
 import piano3Mobile from "../assets/9x16-piano3.jpg";
 
-import reloj0 from "../assets/reloj-render.mp4";
 import reloj1 from "../assets/reloj1.jpg";
 import reloj1Mobile from "../assets/9x16-reloj1.jpg";
 import reloj2 from "../assets/reloj2.jpg";
@@ -82,7 +74,6 @@ import reloj2Mobile from "../assets/9x16-reloj2.jpg";
 import reloj3 from "../assets/reloj3.jpg";
 import reloj3Mobile from "../assets/9x16-reloj3.jpg";
 
-import rockola0 from "../assets/rockola-render.mp4";
 import rockola1 from "../assets/rockola1.jpg";
 import rockola1Mobile from "../assets/9x16-rockola1.jpg";
 import rockola2 from "../assets/rockola2.jpg";
@@ -94,16 +85,12 @@ import rockola4Mobile from "../assets/9x16-rockola4.jpg";
 
 import starwars from "../assets/star-wars-2.jpg";
 import starwarsMobile from "../assets/9x16-star-wars.jpg";
-import starwars2 from "../assets/star-wars-breakdown.mp4";
 import sirena from "../assets/sirena-3.jpg";
 import sirenaMobile from "../assets/9x16-sirena.jpg";
-import sirena2 from "../assets/sirena-breakdown-2.mp4";
 import wonder from "../assets/wonder_woman.jpg";
 import wonderMobile from "../assets/9x16-wonder-woman.jpg";
-import wonder2 from "../assets/wonder-woman-breakdown.mp4";
 import blue from "../assets/perfect-blue-4.jpg";
 import blueMobile from "../assets/9x16-perfect-blue.jpg";
-import blue2 from "../assets/perfect-blue-breakdown.mp4";
 import drinkeat1 from "../assets/drinkeat-slide2.jpg";
 import drinkeat1Mobile from "../assets/9x16-drinkeat-slide2.jpg";
 import drinkeat2 from "../assets/drinkeat-slide3.jpg";
@@ -180,7 +167,7 @@ const proyectos: Proyecto[] = [
           { type: "image", src: nave1, mobileSrc: nave1Mobile, bigMobileSrc: nave1Mobile },
           { type: "image", src: nave2, mobileSrc: nave2Mobile, bigMobileSrc: nave2Mobile },
           { type: "image", src: nave3, mobileSrc: nave3Mobile, bigMobileSrc: nave3Mobile },
-          { type: "video", src: nave0 }
+          { type: "youtube", src: "https://www.youtube.com/embed/W_Br0CHdlBc?rel=0&loop=1&playlist=W_Br0CHdlBc&autoplay=1&vq=hd1080" }
         ],
       },
       {
@@ -192,7 +179,7 @@ const proyectos: Proyecto[] = [
           { type: "image", src: satelite3, mobileSrc: satelite3Mobile, bigMobileSrc: satelite3Mobile },
           { type: "image", src: satelite4, mobileSrc: satelite4Mobile, bigMobileSrc: satelite4Mobile },
           { type: "image", src: satelite5, mobileSrc: satelite5Mobile, bigMobileSrc: satelite5Mobile },
-          { type: "video", src: satelite0 }
+          { type: "youtube", src: "https://www.youtube.com/embed/F1K5_zMeoX0?rel=0&loop=1&playlist=F1K5_zMeoX0&autoplay=1&vq=hd1080"}
         ],
       },
       {
@@ -202,7 +189,7 @@ const proyectos: Proyecto[] = [
           { type: "image", src: ovni1, mobileSrc: ovni1Mobile, bigMobileSrc: ovni1Mobile },
           { type: "image", src: ovni2, mobileSrc: ovni2Mobile, bigMobileSrc: ovni2Mobile },
           { type: "image", src: ovni3, mobileSrc: ovni3Mobile, bigMobileSrc: ovni3Mobile },
-          { type: "video", src: ovni0 }
+          { type: "youtube", src: "https://www.youtube.com/embed/D0Ohux0f4B0?rel=0&loop=1&playlist=D0Ohux0f4B0&autoplay=1&vq=hd1080" }
         ],
       },
       {
@@ -213,7 +200,7 @@ const proyectos: Proyecto[] = [
           { type: "image", src: muñeca2, mobileSrc: muñeca2Mobile, bigMobileSrc: muñeca2Mobile },
           { type: "image", src: muñeca3, mobileSrc: muñeca3Mobile, bigMobileSrc: muñeca3Mobile },
           { type: "image", src: muñeca4, mobileSrc: muñeca4Mobile, bigMobileSrc: muñeca4Mobile },
-          { type: "video", src: muñeca0 }
+          { type: "youtube", src: "https://www.youtube.com/embed/baUAp5CzlOE?rel=0&loop=1&playlist=baUAp5CzlOE&autoplay=1&vq=hd1080" }
         ],
       },
       {
@@ -224,7 +211,7 @@ const proyectos: Proyecto[] = [
           { type: "image", src: rockola2, mobileSrc: rockola2Mobile, bigMobileSrc: rockola2Mobile },
           { type: "image", src: rockola3, mobileSrc: rockola3Mobile, bigMobileSrc: rockola3Mobile },
           { type: "image", src: rockola4, mobileSrc: rockola4Mobile, bigMobileSrc: rockola4Mobile },
-          { type: "video", src: rockola0 }
+          { type: "youtube", src: "https://www.youtube.com/embed/m11J2FC-PcM?rel=0&loop=1&playlist=m11J2FC-PcM&autoplay=1&vq=hd1080" }
         ],
       },
       {
@@ -234,7 +221,7 @@ const proyectos: Proyecto[] = [
           { type: "image", src: piano1, mobileSrc: piano1Mobile, bigMobileSrc: piano1Mobile },
           { type: "image", src: piano2, mobileSrc: piano2Mobile, bigMobileSrc: piano2Mobile },
           { type: "image", src: piano3, mobileSrc: piano3Mobile, bigMobileSrc: piano3Mobile },
-          { type: "video", src: piano0 }
+          { type: "youtube", src: "https://www.youtube.com/embed/Q_pUYs2mZxg?rel=0&loop=1&playlist=Q_pUYs2mZxg&autoplay=1&vq=hd1080" }
         ],
       },
       {
@@ -244,7 +231,7 @@ const proyectos: Proyecto[] = [
           { type: "image", src: reloj1, mobileSrc: reloj1Mobile, bigMobileSrc: reloj1Mobile },
           { type: "image", src: reloj2, mobileSrc: reloj2Mobile, bigMobileSrc: reloj2Mobile },
           { type: "image", src: reloj3, mobileSrc: reloj3Mobile, bigMobileSrc: reloj3Mobile },
-          { type: "video", src: reloj0 }
+          { type: "youtube", src: "https://www.youtube.com/embed/jmPVqIdOQBM?rel=0&loop=1&playlist=jmPVqIdOQBM&autoplay=1&vq=hd1080" }
         ],
       },
     ],
@@ -259,7 +246,7 @@ const proyectos: Proyecto[] = [
         descripcion1: "Documento de conflictos cósmicos... ¿reales o imaginados?",
         galeria:[
           { type: "image", src: starwars, mobileSrc: starwarsMobile, bigMobileSrc: starwarsMobile },
-          { type: "video", src: starwars2 }
+          { type: "youtube", src: "https://www.youtube.com/embed/TQgvBwTgqs8?rel=0&loop=1&playlist=TQgvBwTgqs8&autoplay=1&vq=hd1080" }
         ],
       },
       {
@@ -267,16 +254,16 @@ const proyectos: Proyecto[] = [
         descripcion1: "¿Cómo lo lograron? La tía medusa posa igual para su foto del pasaporte interestelar...",
         galeria: [
           { type: "image", src: sirena, mobileSrc: sirenaMobile, bigMobileSrc: sirenaMobile},
-          { type: "video", src: sirena2 }
+          { type: "youtube", src: "https://www.youtube.com/embed/hvmm_66ZhzA?rel=0&loop=1&playlist=hvmm_66ZhzA&autoplay=1&vq=hd1080" }
         ],
       },
       {
         titulo: "Fuga líquida armónica",
-        descripcion1: (<>¿Lágrimas que salen transmisor?<br />
+        descripcion1: (<>¿Lágrimas que salen del transmisor?<br />
                       Aún evaluamos si eso es normal en su especie...</>),
         galeria: [
           { type: "image", src: blue, mobileSrc: blueMobile, bigMobileSrc: blueMobile },
-          { type: "video", src: blue2 }
+          { type: "youtube", src: "https://www.youtube.com/embed/jbEaKxjUNyY?rel=0&loop=1&playlist=jbEaKxjUNyY&autoplay=1&vq=hd1080" }
         ],
       },
       {
@@ -284,7 +271,7 @@ const proyectos: Proyecto[] = [
         descripcion1: "Evidencia de la obsesión terrestre por capas y heroína",
         galeria: [
           { type: "image", src: wonder, mobileSrc: wonderMobile, bigMobileSrc: wonderMobile },
-          { type: "video", src: wonder2 },
+          { type: "youtube", src: "https://www.youtube.com/embed/dEMwIZCaMw0?rel=0&loop=1&playlist=dEMwIZCaMw0&autoplay=1&vq=hd1080" },
         ],
       },
       {
@@ -318,7 +305,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/QewWsRvbzMw"
+            src: "https://www.youtube.com/embed/QewWsRvbzMw?rel=0&loop=1&playlist=QewWsRvbzMw&autoplay=1&vq=hd1080"
           }
         ],
       },
@@ -329,7 +316,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/K8r3EwptcQg"
+            src: "https://www.youtube.com/embed/K8r3EwptcQg?rel=0&loop=1&playlist=K8r3EwptcQg&autoplay=1&vq=hd1080"
           }
         ],
       },
@@ -340,7 +327,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/IQnZdgrEj9M"
+            src: "https://www.youtube.com/embed/IQnZdgrEj9M?rel=0&loop=1&playlist=IQnZdgrEj9M&autoplay=1&vq=hd1080"
           }
         ],
       },
@@ -351,7 +338,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/f0GtpZ_O1Do"
+            src: "https://www.youtube.com/embed/f0GtpZ_O1Do?rel=0&loop=1&playlist=f0GtpZ_O1Do&autoplay=1&vq=hd1080"
           }
         ],
       },
@@ -362,7 +349,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/Kw5E6c48ALc"
+            src: "https://www.youtube.com/embed/Kw5E6c48ALc?rel=0&loop=1&playlist=Kw5E6c48ALc&autoplay=1&vq=hd1080"
           }
         ],
       },
@@ -373,7 +360,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/UU3EkJgDV8U"
+            src: "https://www.youtube-nocookie.com/embed/UU3EkJgDV8U?rel=0&loop=1&playlist=UU3EkJgDV8U&autoplay=1&vq=hd1080"
           }
         ],
       },
@@ -424,7 +411,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/Zk7dIey8e5Q"
+            src: "https://www.youtube.com/embed/Zk7dIey8e5Q?rel=0&loop=1&playlist=Zk7dIey8e5Q&autoplay=1&vq=hd1080"
           }
         ]
       }
@@ -441,7 +428,7 @@ const proyectos: Proyecto[] = [
         galeria: [
           {
             type: "youtube",
-            src: "https://www.youtube.com/embed/3BhsNbKbMwY"
+            src: "https://www.youtube.com/embed/3BhsNbKbMwY?rel=0&loop=1&playlist=3BhsNbKbMwY&autoplay=1&vq=hd1080"
           }
         ]
       }
@@ -577,6 +564,11 @@ export default function NuestroTrabajo() {
     const len = proyecto.slides[slideIdx].galeria.length;
     const prevIdx = cur === 0 ? len - 1 : cur - 1;
     changeGalleryImage(proyecto.id, slideIdx, prevIdx);
+  };
+
+  const getYoutubeId = (url: string) => {
+  const match = url.match(/embed\/([a-zA-Z0-9_-]+)/);
+  return match ? match[1] : "";
   };
 
   // SWIPE del carrusel principal (3D)
@@ -766,7 +758,9 @@ export default function NuestroTrabajo() {
                                 src={media.src}
                                 title="YouTube video player"
                                 frameBorder="0"
+                                sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
                               ></iframe>
                             </div>
@@ -779,26 +773,53 @@ export default function NuestroTrabajo() {
                         
                         {slide.galeria.length > 1 && (
                           <div className="miniaturas">
-                            {slide.galeria.map((m, i) =>
-                              m.type === "video" ? (
-                                <div
-                                  key={i}
-                                  className={`miniatura ${i === curIdx ? "miniatura-activa" : ""}`}
-                                  onClick={() => changeGalleryImage(proyecto.id, slideIdx, i)}
-                                >
-                                  <div className="mini-video-overlay"><video src={m.src} muted className="mini-video" /></div>
+                            {slide.galeria.map((m, i) => {
 
-                                </div>
-                              ) : (
-                                <img
-                                  key={i}
-                                  src={m.src}
-                                  alt={`mini-${i}`}
-                                  onClick={() => changeGalleryImage(proyecto.id, slideIdx, i)}
-                                  className={i === curIdx ? "miniatura-activa" : ""}
-                                />
-                              )
-                            )}
+                              // 🎬 VIDEO LOCAL
+                              if (m.type === "video") {
+                                return (
+                                  <div
+                                    key={i}
+                                    className={`miniatura ${i === curIdx ? "miniatura-activa" : ""}`}
+                                    onClick={() => changeGalleryImage(proyecto.id, slideIdx, i)}
+                                  >
+                                    <div className="mini-video-overlay">
+                                      <video src={m.src} muted className="mini-video" />
+                                    </div>
+                                  </div>
+                                );
+                              }
+
+                              // ▶️ YOUTUBE
+                              if (m.type === "youtube") {
+                                const videoId = getYoutubeId(m.src);
+                                return (
+                                  <div
+                                    key={i}
+                                    className={`miniatura ${i === curIdx ? "miniatura-activa" : ""}`}
+                                    onClick={() => changeGalleryImage(proyecto.id, slideIdx, i)}
+                                  >
+                                    <div className="mini-video-overlay">
+                                        <img className="mini-video"
+                                          src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                                          alt={`youtube-mini-${i}`}
+                                        />
+                                    </div>
+                                  </div>
+                                );
+                              }
+
+                                // 🖼️ IMAGEN
+                                return (
+                                  <img
+                                    key={i}
+                                    src={m.src}
+                                    alt={`mini-${i}`}
+                                    onClick={() => changeGalleryImage(proyecto.id, slideIdx, i)}
+                                    className={i === curIdx ? "miniatura-activa" : ""}
+                                  />
+                                );
+                              })}
                           </div>
                         )}
                         </div>
